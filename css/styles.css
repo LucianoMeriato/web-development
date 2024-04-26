@@ -1,0 +1,63 @@
+body {
+    text-align: center;
+    background-image: url(/plano\ de\ fundo.jpeg);
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a tela */
+}
+
+.Cor_do_texto h1 {
+    color: rgb(0, 0, 0);
+}
+
+#botaocookie, #botaoreset {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+}
+
+#botaocookie {
+    height: 200px;
+}
+
+#botaoreset {
+    height: 50px;
+}
+
+#cliques p {
+    font-size: 3vw; /* Usa viewport width para ajustar o tamanho da fonte */
+    color: rgb(0, 0, 0);
+}
+
+img:hover:active {
+    animation: efeito 1s ease-in-out;
+}
+
+@keyframes efeito {
+    0%, 100% {
+        transform: scale(1.1);
+        filter: drop-shadow( rgb(194, 52, 46) 0 0 2rem);
+    }
+}
+
+/* Media Queries para diferentes tamanhos de tela */
+@media (max-width: 768px) { /* Para tablets */
+    #botaocookie {
+        height: 150px;
+    }
+    #botaoreset {
+        height: 40px;
+    }
+    #cliques p {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) { /* Para celulares */
+    #botaocookie {
+        height: 100px;
+    }
+    #botaoreset {
+        height: 30px;
+    }
+    #cliques p {
+        font-size: 7vw;
+    }
+}
